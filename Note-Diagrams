@@ -1,1 +1,37 @@
-<mxfile host="app.diagrams.net" modified="2022-06-19T21:56:20.314Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44" version="20.0.1" etag="zvl8HYZLtjBXKvCtlvAV" type="github"><diagram id="J5Se6Oay_5rNeMfxYynv">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2022-06-19T22:16:01.173Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44" etag="6yJkezM1gJkl3dqXedCo" version="20.0.1" type="github">
+  <diagram id="J5Se6Oay_5rNeMfxYynv" name="Page-1">
+    <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-2" value="1) Collecting Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="100" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-5" value="&lt;ul&gt;&lt;li&gt;Create and edit text-based notes.&lt;/li&gt;&lt;li&gt;Attach photos.&lt;/li&gt;&lt;li&gt;Capture hand-drawn sketches.&lt;/li&gt;&lt;li&gt;Allo protected/sensitive notes.&lt;/li&gt;&lt;li&gt;Sync app data to Dropbox, iCloud, or Google Drive&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="50" y="120" width="390" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-13" value="Note Diagrams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="345" y="990" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-14" value="&lt;span style=&quot;font-weight: 700; text-align: left; text-decoration-line: underline; font-size: 21px;&quot;&gt;Requirements&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" vertex="1" parent="1">
+          <mxGeometry x="345" y="15" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-15" value="2) Functional Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="300" width="200" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-16" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;We need to build a note-taking app. Users can create and edit text-base notes.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;A note may also include images or hand-drawn Sketches&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Sensitive notes can be protected from prying eyes using a password.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app automatically uploads changes to pre-configured servers.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app should support all major platforms: Dropbox, iCloud, or Google Drive&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="320" width="580" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-19" value="2) NonFunctional Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="460" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-20" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Release our app for Android first. We&#39;ll support Android 9 and newer versions.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app needs to run on the Android Phone &amp;amp; Tablet&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;We&#39;ll create a dedicated support website and include the link in the app description and its &quot;About&quot; page.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" vertex="1" parent="1">
+          <mxGeometry x="50" y="480" width="750" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-21" value="Note Diagrams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="345" y="610" width="160" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
