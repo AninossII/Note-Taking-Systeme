@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2022-06-19T22:16:01.173Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44" etag="6yJkezM1gJkl3dqXedCo" version="20.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-19T22:30:03.943Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44" etag="m9cmpR1oFQ4qCoeloD58" version="20.0.1" type="github">
   <diagram id="J5Se6Oay_5rNeMfxYynv" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -11,7 +11,7 @@
           <mxGeometry x="50" y="120" width="390" height="130" as="geometry" />
         </mxCell>
         <mxCell id="M0ELFQTDe1X1Ont5kPcH-13" value="Note Diagrams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
-          <mxGeometry x="345" y="990" width="160" height="30" as="geometry" />
+          <mxGeometry x="345" y="1050" width="160" height="30" as="geometry" />
         </mxCell>
         <mxCell id="M0ELFQTDe1X1Ont5kPcH-14" value="&lt;span style=&quot;font-weight: 700; text-align: left; text-decoration-line: underline; font-size: 21px;&quot;&gt;Requirements&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" vertex="1" parent="1">
           <mxGeometry x="345" y="15" width="160" height="30" as="geometry" />
@@ -28,8 +28,26 @@
         <mxCell id="M0ELFQTDe1X1Ont5kPcH-20" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Release our app for Android first. We&#39;ll support Android 9 and newer versions.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app needs to run on the Android Phone &amp;amp; Tablet&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;We&#39;ll create a dedicated support website and include the link in the app description and its &quot;About&quot; page.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" vertex="1" parent="1">
           <mxGeometry x="50" y="480" width="750" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-21" value="Note Diagrams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
-          <mxGeometry x="345" y="610" width="160" height="30" as="geometry" />
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-21" value="User Storys" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="360" y="610" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-22" value="Note Creation and Editing (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="700" width="230" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-23" value="&lt;ul&gt;&lt;li&gt;As a user, I want to create and edit notes so that I can quickly jot down my thoughts.&lt;/li&gt;&lt;li&gt;As a user, I want to attach photos to a note so that I can keep my memories in one place.&lt;/li&gt;&lt;li&gt;As a user, I want to add handwritten sketches so that I can insert funny toons into my notes&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="50" y="720" width="660" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-26" value="Privacy (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="820" width="110" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-27" value="&lt;ul&gt;&lt;li&gt;As a user, I want to create private notes so that only I can access them.&lt;/li&gt;&lt;li&gt;As a user, I want to protect my sensitive notes with a password.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="530" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-28" value="Syncing to could servers (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="940" width="220" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-29" value="&lt;ul&gt;&lt;li&gt;As a user, I want to sync my notes across my Android devices so that my data is up-to-date on all of them.&lt;/li&gt;&lt;li&gt;As a user, I want my notes automatically uploaded to cloud servers so that I have a backup of all my data&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+          <mxGeometry x="40" y="960" width="760" height="70" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
