@@ -1,53 +1,177 @@
-<mxfile host="app.diagrams.net" modified="2022-06-19T22:30:03.943Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44" etag="m9cmpR1oFQ4qCoeloD58" version="20.0.1" type="github">
+<mxfile host="app.diagrams.net" modified="2022-06-21T22:27:54.760Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/102.0.5005.124 Safari/537.36 Edg/102.0.1245.44" etag="DYJxvcOuF9GuLK56Jl9G" version="20.0.1" type="github">
   <diagram id="J5Se6Oay_5rNeMfxYynv" name="Page-1">
     <mxGraphModel dx="1422" dy="786" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-2" value="1) Collecting Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-2" value="1) Collecting Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="100" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-5" value="&lt;ul&gt;&lt;li&gt;Create and edit text-based notes.&lt;/li&gt;&lt;li&gt;Attach photos.&lt;/li&gt;&lt;li&gt;Capture hand-drawn sketches.&lt;/li&gt;&lt;li&gt;Allo protected/sensitive notes.&lt;/li&gt;&lt;li&gt;Sync app data to Dropbox, iCloud, or Google Drive&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-5" value="&lt;ul&gt;&lt;li&gt;Create and edit text-based notes.&lt;/li&gt;&lt;li&gt;Attach photos.&lt;/li&gt;&lt;li&gt;Capture hand-drawn sketches.&lt;/li&gt;&lt;li&gt;Allo protected/sensitive notes.&lt;/li&gt;&lt;li&gt;Sync app data to Dropbox, iCloud, or Google Drive&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="50" y="120" width="390" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-13" value="Note Diagrams" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
-          <mxGeometry x="345" y="1050" width="160" height="30" as="geometry" />
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-13" value="-------------------------- Note Diagrams --------------------------" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=1" parent="1" vertex="1">
+          <mxGeometry x="155" y="1130" width="540" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-14" value="&lt;span style=&quot;font-weight: 700; text-align: left; text-decoration-line: underline; font-size: 21px;&quot;&gt;Requirements&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-14" value="&lt;span style=&quot;font-weight: 700; text-align: left; text-decoration-line: underline; font-size: 21px;&quot;&gt;Requirements&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" parent="1" vertex="1">
           <mxGeometry x="345" y="15" width="160" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-15" value="2) Functional Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-15" value="2) Functional Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="300" width="200" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-16" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;We need to build a note-taking app. Users can create and edit text-base notes.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;A note may also include images or hand-drawn Sketches&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Sensitive notes can be protected from prying eyes using a password.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app automatically uploads changes to pre-configured servers.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app should support all major platforms: Dropbox, iCloud, or Google Drive&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-16" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;We need to build a note-taking app. Users can create and edit text-base notes.&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;&quot;&gt;A note may also include images or hand-drawn Sketches&lt;/span&gt;&lt;/li&gt;&lt;li&gt;Sensitive notes can be protected from prying eyes using a password.&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app automatically uploads changes to pre-configured servers.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app should support all major platforms: Dropbox, iCloud, or Google Drive&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" parent="1" vertex="1">
           <mxGeometry x="50" y="320" width="580" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-19" value="2) NonFunctional Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-19" value="2) NonFunctional Requirements" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="460" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-20" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Release our app for Android first. We&#39;ll support Android 9 and newer versions.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app needs to run on the Android Phone &amp;amp; Tablet&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;We&#39;ll create a dedicated support website and include the link in the app description and its &quot;About&quot; page.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-20" value="&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;Release our app for Android first. We&#39;ll support Android 9 and newer versions.&lt;/span&gt;&lt;br&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;The app needs to run on the Android Phone &amp;amp; Tablet&amp;nbsp;&lt;/span&gt;&lt;/li&gt;&lt;li&gt;We&#39;ll create a dedicated support website and include the link in the app description and its &quot;About&quot; page.&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;labelBackgroundColor=none;labelBorderColor=none;spacingTop=0;" parent="1" vertex="1">
           <mxGeometry x="50" y="480" width="750" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-21" value="User Storys" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-21" value="User Storys" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" parent="1" vertex="1">
           <mxGeometry x="360" y="610" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-22" value="Note Creation and Editing (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-22" value="Note Creation and Editing (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="700" width="230" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-23" value="&lt;ul&gt;&lt;li&gt;As a user, I want to create and edit notes so that I can quickly jot down my thoughts.&lt;/li&gt;&lt;li&gt;As a user, I want to attach photos to a note so that I can keep my memories in one place.&lt;/li&gt;&lt;li&gt;As a user, I want to add handwritten sketches so that I can insert funny toons into my notes&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-23" value="&lt;ul&gt;&lt;li&gt;As a user, I want to create and edit notes so that I can quickly jot down my thoughts.&lt;/li&gt;&lt;li&gt;As a user, I want to attach photos to a note so that I can keep my memories in one place.&lt;/li&gt;&lt;li&gt;As a user, I want to add handwritten sketches so that I can insert funny toons into my notes&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="50" y="720" width="660" height="90" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-26" value="Privacy (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-26" value="Privacy (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="820" width="110" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-27" value="&lt;ul&gt;&lt;li&gt;As a user, I want to create private notes so that only I can access them.&lt;/li&gt;&lt;li&gt;As a user, I want to protect my sensitive notes with a password.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-27" value="&lt;ul&gt;&lt;li&gt;As a user, I want to create private notes so that only I can access them.&lt;/li&gt;&lt;li&gt;As a user, I want to protect my sensitive notes with a password.&lt;br&gt;&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="840" width="530" height="70" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-28" value="Syncing to could servers (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-28" value="Syncing to could servers (epic)" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="940" width="220" height="20" as="geometry" />
         </mxCell>
-        <mxCell id="M0ELFQTDe1X1Ont5kPcH-29" value="&lt;ul&gt;&lt;li&gt;As a user, I want to sync my notes across my Android devices so that my data is up-to-date on all of them.&lt;/li&gt;&lt;li&gt;As a user, I want my notes automatically uploaded to cloud servers so that I have a backup of all my data&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" vertex="1" parent="1">
+        <mxCell id="M0ELFQTDe1X1Ont5kPcH-29" value="&lt;ul&gt;&lt;li&gt;As a user, I want to sync my notes across my Android devices so that my data is up-to-date on all of them.&lt;/li&gt;&lt;li&gt;As a user, I want my notes automatically uploaded to cloud servers so that I have a backup of all my data&lt;/li&gt;&lt;/ul&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=15;" parent="1" vertex="1">
           <mxGeometry x="40" y="960" width="760" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-1" value="Use-Cases Diagram" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="320" y="1210" width="210" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-8" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Xh3aWZyQIW3oauihz3_k-2" target="Xh3aWZyQIW3oauihz3_k-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-9" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Xh3aWZyQIW3oauihz3_k-2" target="Xh3aWZyQIW3oauihz3_k-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-2" value="User" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="20" y="1340" width="50" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-34" value="Note Taking App" style="swimlane;fontStyle=1;align=center;horizontal=1;startSize=30;collapsible=0;html=1;" vertex="1" parent="1">
+          <mxGeometry x="90" y="1250" width="520" height="390" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-5" value="Create Note" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="Xh3aWZyQIW3oauihz3_k-34">
+          <mxGeometry x="87.5" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-7" value="Edit Note" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="Xh3aWZyQIW3oauihz3_k-34">
+          <mxGeometry x="27.5" y="170" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-10" value="Attach Photos" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="Xh3aWZyQIW3oauihz3_k-34">
+          <mxGeometry x="332.5" y="70" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-14" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;labelBorderColor=none;labelBackgroundColor=none;" edge="1" parent="Xh3aWZyQIW3oauihz3_k-34" source="Xh3aWZyQIW3oauihz3_k-5" target="Xh3aWZyQIW3oauihz3_k-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-17" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" vertex="1" connectable="0" parent="Xh3aWZyQIW3oauihz3_k-14">
+          <mxGeometry x="-0.3231" relative="1" as="geometry">
+            <mxPoint x="23" y="-10" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-13" value="Add Handwritten Sketch" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="Xh3aWZyQIW3oauihz3_k-34">
+          <mxGeometry x="272.5" y="180" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-21" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Xh3aWZyQIW3oauihz3_k-34" source="Xh3aWZyQIW3oauihz3_k-7" target="Xh3aWZyQIW3oauihz3_k-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185.83328475092503" y="136.4443991008634" as="sourcePoint" />
+            <mxPoint x="282.5" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-22" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" vertex="1" connectable="0" parent="Xh3aWZyQIW3oauihz3_k-21">
+          <mxGeometry x="-0.2905" y="-2" relative="1" as="geometry">
+            <mxPoint x="1" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="Xh3aWZyQIW3oauihz3_k-34" source="Xh3aWZyQIW3oauihz3_k-5" target="Xh3aWZyQIW3oauihz3_k-13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="222.5" y="170" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-18" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" vertex="1" connectable="0" parent="Xh3aWZyQIW3oauihz3_k-15">
+          <mxGeometry x="-0.2905" y="-2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-23" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="Xh3aWZyQIW3oauihz3_k-34" source="Xh3aWZyQIW3oauihz3_k-7" target="Xh3aWZyQIW3oauihz3_k-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="217.5" y="260" as="sourcePoint" />
+            <mxPoint x="282.5" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-24" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" vertex="1" connectable="0" parent="Xh3aWZyQIW3oauihz3_k-23">
+          <mxGeometry x="-0.2905" y="-2" relative="1" as="geometry">
+            <mxPoint x="68" y="-42" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-28" value="Create Private Note" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="Xh3aWZyQIW3oauihz3_k-34">
+          <mxGeometry x="152.5" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-29" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="Xh3aWZyQIW3oauihz3_k-34" source="Xh3aWZyQIW3oauihz3_k-5" target="Xh3aWZyQIW3oauihz3_k-28">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="185.83328475092503" y="136.4443991008634" as="sourcePoint" />
+            <mxPoint x="282.5" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-30" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=bottom;resizable=0;points=[];" vertex="1" connectable="0" parent="Xh3aWZyQIW3oauihz3_k-29">
+          <mxGeometry x="-0.2905" y="-2" relative="1" as="geometry">
+            <mxPoint x="38" y="73" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-31" value="protect notes with password" style="shape=ellipse;html=1;strokeWidth=3;fontStyle=1;whiteSpace=wrap;align=center;perimeter=ellipsePerimeter;" vertex="1" parent="Xh3aWZyQIW3oauihz3_k-34">
+          <mxGeometry x="372.5" y="260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-32" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="Xh3aWZyQIW3oauihz3_k-34" source="Xh3aWZyQIW3oauihz3_k-28" target="Xh3aWZyQIW3oauihz3_k-31">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="157.5" y="210" as="sourcePoint" />
+            <mxPoint x="282.5" y="220" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-33" value="&lt;span style=&quot;background-color: rgb(248, 249, 250);&quot;&gt;&amp;lt;&amp;lt;include&amp;gt;&amp;gt;&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Xh3aWZyQIW3oauihz3_k-32">
+          <mxGeometry x="-0.2905" y="-2" relative="1" as="geometry">
+            <mxPoint x="15" y="-2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-41" value="Cloud Server" style="shape=rect;html=1;verticalAlign=top;fontStyle=1;whiteSpace=wrap;align=center;" vertex="1" parent="1">
+          <mxGeometry x="700" y="1250" width="120" height="130" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-42" value="" style="shape=umlActor;html=1;verticalLabelPosition=bottom;verticalAlign=top;align=center;" vertex="1" parent="1">
+          <mxGeometry x="745" y="1290" width="30" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-43" style="edgeStyle=none;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;labelBorderColor=none;endArrow=none;endFill=0;" edge="1" parent="1" source="Xh3aWZyQIW3oauihz3_k-5" target="Xh3aWZyQIW3oauihz3_k-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="290" y="1300" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-44" style="edgeStyle=none;rounded=0;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;labelBorderColor=none;endArrow=none;endFill=0;" edge="1" parent="1" source="Xh3aWZyQIW3oauihz3_k-7" target="Xh3aWZyQIW3oauihz3_k-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="500" y="1400" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Xh3aWZyQIW3oauihz3_k-45" value="Keep your user case diagrams clean and simple !" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;fontStyle=5" vertex="1" parent="1">
+          <mxGeometry x="170" y="1660" width="510" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
