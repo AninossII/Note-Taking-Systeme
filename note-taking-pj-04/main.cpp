@@ -6,27 +6,33 @@
 
 using namespace std;
 
-class Image {
-
+class Image
+{
 };
 
-class Note {
+class Note
+{
 	string _id;
 	string _title;
 	string _text;
-	bool bType = false;
+	bool bType;
 	vector<Image*> _images;
 public:
-	Note(){}
+	Note()
+	{
+	}
 
-	Note(string id, string title, string text)
+	Note(string id, string title, string text, bool bType = false)
 	{
 		_id = id;
 		_title = title;
 		_text = text;
+		this->bType = bType;
 	}
 
-	~Note() {}
+	~Note()
+	{
+	}
 
 	void setID(string id) { _id = id; }
 	string getID() { return _id; }
@@ -40,93 +46,170 @@ public:
 	bool getbType() { return bType; }
 };
 
-class ILocalPersistence {
+class ILocalPersistence
+{
 protected:
 	vector<Note*> _noteList;
+	vector<Note*> _pNoteList;
 public:
-	ILocalPersistence() {}
-	~ILocalPersistence(){}
+	ILocalPersistence()
+	{
+	}
+
+	~ILocalPersistence()
+	{
+	}
+
 	vector<Note*> getNotes() { return _noteList; }
-	virtual void saveNote(Note* note){}
-	virtual void updateNote (string id) {}
-	virtual void deleteNote (string id) {}
-	virtual void DisplayNotes() {}
+	vector<Note*> getPrivatNotes() { return _pNoteList; }
+
+	virtual void SaveNote(Note* note, bool bType)
+	{
+	}
+
+	virtual void UpdateNote(string id, bool bType)
+	{
+	}
+
+	virtual void DeleteNote(string id, bool bType)
+	{
+	}
+
+	virtual void DisplayNotes()
+	{
+	}
+
+	virtual void DisplayPrivateNotes()
+	{
+		
+	}
+
+	virtual void DisplayNote(string id)
+	{
+	}
 };
 
-class FileManager : public ILocalPersistence {
+class FileManager : public ILocalPersistence
+{
 	ifstream _fileIn;
 	ofstream _fileOut;
 	string _name;
 	string _password;
 	bool bCheck = false;
 public:
-
-	void setName(string *name) { _name = *name; }
+	void setName(string* name) { _name = *name; }
 	string getName() { return _name; }
-	void setPassword(string *password) { _password = *password; }
+	void setPassword(string* password) { _password = *password; }
 	string getPassword() { return _password; }
 
-	bool InPut() {
+	bool InPut()
+	{
 		_fileIn.open("Info.txt");
-		while (_fileIn.peek() != ifstream::traits_type::eof()) {
+		while (_fileIn.peek() != ifstream::traits_type::eof())
+		{
 			getline(_fileIn, _name);
 			getline(_fileIn, _password);
-			if (_name != "" && _password != "") {
+			if (_name != "" && _password != "")
+			{
 				bCheck = true;
 			}
 			_fileIn.ignore();
 		}
-		_fileIn.close();		
+		_fileIn.close();
 		return bCheck;
 	}
 
-	void OutPut() {
-		_fileOut.open("Info.txt");		
+	void OutPut()
+	{
+		_fileOut.open("Info.txt");
 		_fileOut << _name << "\n" << _password << endl;
 	}
 
-	virtual void saveNote(Note* note)
+	void SaveNote(Note* note, bool bType) override
 	{
-		_noteList.push_back(note);
+		if(bType)
+			_pNoteList.push_back(note);
+		else
+			_noteList.push_back(note);
 	}
 
-	virtual void UpdateNote(string id)
+	virtual void UpdateNote(Note* note, string id, string title, string text, bool bType)
 	{
-		
+		if(!bType)
+			for (int i = 0; i < _pNoteList.size(); i++)
+				if (id == _pNoteList[i]->getID())
+					_pNoteList[i] = note;
+				else
+					cout << "ID" << "'" << id << "'" << "Does Not Exist" << "\n";
+		else
+			for (int i = 0; i < _noteList.size(); i++)
+				if (id == _noteList[i]->getID())
+					_noteList[i] = note;
+				else
+					cout << "ID" << "'" << id << "'" << "Does Not Exist" << "\n";
 	}
 
-	virtual void deleteNote(string id)
+	void DeleteNote(string id, bool bType) override
 	{
-
+		if(bType)
+			_noteList.erase(remove(_pNoteList.begin(), _pNoteList.end(), _pNoteList[stoi(id)]), _pNoteList.end());
+		else
+			_noteList.erase(remove(_noteList.begin(), _noteList.end(), _noteList[stoi(id)]), _noteList.end());
 	}
 
-	virtual void DisplayNotes()
+	void DisplayNotes() override
 	{
 		if (_noteList.size() != 0)
 
 			for (int i = 0; i < _noteList.size(); i++)
-				cout << "" << _noteList[i]->getID() << " | " << _noteList[i]->getTitle() << "\n" << "--------" << _noteList[i]->getText() << "\n";
+				cout << "" << _noteList[i]->getID() << " | " << _noteList[i]->getTitle() << "\n" << "--------" <<
+					_noteList[i]->getText() << "\n";
 		else
 			cout << "Add a note" << "\n";
-		
+	}
+
+	void DisplayPrivateNotes() override
+	{
+		if (_pNoteList.size() != 0)
+
+			for (int i = 0; i < _pNoteList.size(); i++)
+				cout << "" << _pNoteList[i]->getID() << " | " << _pNoteList[i]->getTitle() << "\n" << "--------" <<
+				_pNoteList[i]->getText() << "\n";
+		else
+			cout << "Add a note" << "\n";
+	}
+
+	virtual void DisplayNote(int id)
+	{
+		cout << "" << _noteList[id]->getID() << " | " << _noteList[id]->getTitle() << "\n" << "--------" << _noteList[
+			id]->getText() << "\n";
 	}
 };
 
-class NetworkController {
+class NetworkController
+{
 	vector<Note*> _noteList;
 
 public:
 	vector<Note*> getNote() { return _noteList; }
-	void create(Note *note)
+
+	void create(Note* note)
 	{
 		_noteList.push_back(note);
 	};
-	void updateNote(Note note) {};
-	void deleteNote(Note note) {};
+
+	void updateNote(Note note)
+	{
+	};
+
+	void deleteNote(Note note)
+	{
+	};
 };
 
 
-class PrivateNote : public Note {
+class PrivateNote : public Note
+{
 	string _passwordHash;
 public:
 	void setText(string text) { _passwordHash = text; }
@@ -139,7 +222,10 @@ class UI
 	NetworkController* network = new NetworkController();
 	Note* note;
 public:
-	UI(){}
+	UI()
+	{
+	}
+
 	~UI()
 	{
 		//delete fManager;
@@ -147,17 +233,18 @@ public:
 		delete network;
 	}
 
+	// Helpful Functions
 	void Title(string title)
 	{
 		cout << "== " << title << " ==" << "\n";
 	}
 
-	string InputDate()
+	string InputData(string prifix)
 	{
 		string text, title, time;
-		cout << "Enter note Title: ";
+		cout << prifix << " note Title: ";
 		getline(cin, title);
-		cout << "Enter note Text: " << "\n";
+		cout << prifix << " note Text: " << "\n";
 		getline(cin, text);
 
 		return title + "|" + text;
@@ -165,18 +252,110 @@ public:
 
 	void Header(FileManager* fManager)
 	{
-		
 		cout << "Name: " << fManager->getName() << "\n" << "Note Number: " << fManager->getNotes().size() << "\n\n\n";
 	}
 
-	void DisplayNoteMenu(FileManager* fManager)
+	// Note Functions
+	void AddNote(FileManager* fManager, bool bType)
+	{
+		string id, inputData, choice, title, text;
+		inputData = InputData("Enter");
+		for (int i = 0; i < inputData.length(); i++)
+		{
+			if (inputData[i] != '|')
+				title = title + inputData[i];
+			else
+			{
+				for (int j = i + 1; j < inputData.length(); j++)
+					text = text + inputData[j];
+				break;
+			}
+		}
+
+		note = new Note(bType ? to_string(fManager->getPrivatNotes().size() + 1) : to_string(fManager->getNotes().size() + 1), title, text, bType);
+		/*cout << "haddy type: " << (bType ? (to_string(fManager->getPrivatNotes().size() + 1 ) + " Private Notes")  : (to_string((fManager->getNotes().size() + 1) ) + " Notes")) << endl;
+		cin.ignore();*/
+		network->create(note);
+		fManager->SaveNote(note, bType);
+		DisplayNoteMenu(fManager, bType);
+	}
+
+	void UpdateNote(FileManager* fManager, bool bType)
+	{
+		string id, inputData, choice, title, text;
+		cout << "Enter an id: ";
+		getline(cin, id);
+		
+		if (stoi(id) >= 0 && stoi(id) < (bType ? fManager->getPrivatNotes().size() : fManager->getNotes().size()))
+		{
+			inputData = InputData("Update");
+			for (int i = 0; i < inputData.length(); i++)
+			{
+				if (inputData[i] != '|')
+					title = title + inputData[i];
+				else
+				{
+					for (int j = i + 1; j < inputData.length(); j++)
+						text = text + inputData[j];
+					break;
+				}
+			}
+			note = new Note(id, title, text, bType);
+			fManager->UpdateNote(note, id, title, text, bType);
+
+		}
+		else
+		{
+			cout << "ID" << "'" << id << "'" << "Does Not Exist" << "\n";
+			cout << "Try Again (y/n): " << "\n";
+			getline(cin, choice);
+			if (choice[0] == 'y' || choice[0] == 'Y')
+				UpdateNote(fManager, bType);
+			
+		}
+		DisplayNoteMenu(fManager, bType);
+
+	}
+
+	void DeleteNote(FileManager* fManager, bool bType)
+	{
+		string id, inputData, choice, title, text;
+		cout << "Enter an id: ";
+		getline(cin, id);
+		id = to_string(stoi(id) - 1);
+
+		if (stoi(id) >= 0 && stoi(id) < bType ? fManager->getPrivatNotes().size() : fManager->getNotes().size())
+			fManager->DeleteNote(id, bType);
+		else
+		{
+			cout << "ID" << "'" << id << "'" << "Does Not Exist" << "\n";
+			cout << "Try Again (y/n): " << "\n";
+			getline(cin, choice);
+			if (choice[0] == 'y' || choice[0] == 'Y')
+				DeleteNote(fManager, bType);
+			
+		}
+		DisplayNoteMenu(fManager, bType);
+
+	}
+
+	void DisplayNoteMenu(FileManager* fManager, bool bType)
 	{
 		system("cls");
 		Header(fManager);
 
 		// Display Note List
-		Title("Note List");		
-		fManager->DisplayNotes();
+		if(bType)
+		{
+			Title("Private Notes List");
+			fManager->DisplayPrivateNotes();
+		}
+		else
+		{
+			Title("Notes List");
+			fManager->DisplayNotes();
+		}
+			
 
 		// Display Note Menu
 		Title("Menu");
@@ -195,34 +374,23 @@ public:
 		switch (choice[0])
 		{
 		case '1':
-		{	
-			string title, text, inputString;
-			inputString = InputDate();
-			for (int i = 0; i < inputString.length(); i++)
-			{
-				if (inputString[i] != '|')
-					title = title + inputString[i];
-				else
-				{
-					for (int j = i + 1; j < inputString.length(); j++)
-						text = text + inputString[j];
-					break;
-				}
-			}
-			note = new Note(to_string(fManager->getNotes().size() + 1),title, text);		
-			network->create(note);
-			fManager->saveNote(note);
+
+			AddNote(fManager, bType);
 			break;
-		}
+
 		case'2':
-		{
+
+			UpdateNote(fManager, bType);
 			break;
-		}
-		case'S':
-		case's':
+
+		case'3':
+
+			DeleteNote(fManager, bType);
 			break;
+
 		case'B':
 		case'b':
+			DisplayMenu(fManager);
 			break;
 		case'E':
 		case'e':
@@ -233,6 +401,7 @@ public:
 		}
 	}
 
+	// Settings Functions
 	void ChangePassword(FileManager* fManager)
 	{
 		string password, choice;
@@ -256,6 +425,8 @@ public:
 			getline(cin, choice);
 			if (choice[0] == 'y' || choice[0] == 'Y')
 				ChangePassword(fManager);
+			else
+				DisplaySettingMenu(fManager);
 		}
 	}
 
@@ -274,7 +445,7 @@ public:
 		getline(cin, choice);
 		cin.clear();
 
-		switch(choice[0])
+		switch (choice[0])
 		{
 		case '1':
 			{
@@ -287,10 +458,10 @@ public:
 
 				break;
 			}
-		case '2':			
+		case '2':
 			ChangePassword(fManager);
 			break;
-		
+
 		case 'B':
 		case 'b':
 			DisplayMenu(fManager);
@@ -301,10 +472,31 @@ public:
 			exit(1);
 
 		default:
-			cout << "wrong Choice" << endl;	
+			cout << "wrong Choice" << endl;
 		}
 	}
 
+	// Private Note FUnctions
+	void PasswordDisplay(FileManager* fManager)
+	{
+		string password, choice;
+		cout << "Enter Password: ";
+		getline(cin, password);
+		cin.clear();
+		if (fManager->getPassword() == password)
+			DisplayNoteMenu(fManager, true);
+		else
+		{
+			cout << "Try Again (y/n): " << "\n";
+			getline(cin, choice);
+			if (choice[0] == 'y' || choice[0] == 'Y')
+				PasswordDisplay(fManager);
+			else
+				DisplayMenu(fManager);
+		}
+	}
+
+	// Main Menu
 	void DisplayMenu(FileManager* fManager)
 	{
 		bool bBreak = true;
@@ -315,7 +507,7 @@ public:
 			Title("Menu");
 			cout << "Note List __________________(1)" << "\n";
 			cout << "Private Note List __________(2)" << "\n";
-			cout << "Settings ___________________(S)" << "\n";			
+			cout << "Settings ___________________(S)" << "\n";
 			cout << "Exit _______________________(E)" << "\n\n";
 			cout << "Select: ";
 
@@ -326,42 +518,45 @@ public:
 			switch (choice[0])
 			{
 			case '1':
-			{
-				DisplayNoteMenu(fManager);
-				break;
-			}
+				{
+					// Display Note					
+					DisplayNoteMenu(fManager, false);
+					break;
+				}
 			case'2':
-			{
-				// Private note list
-				break;
-			}
+				{
+					// Display Private Note
+					PasswordDisplay(fManager);
+					break;
+				}
 			case'S':
 			case's':
-			{
-				// Settings
-				DisplaySettingMenu(fManager);
-				break;
-			}
+				{
+					// Settings
+					DisplaySettingMenu(fManager);
+					break;
+				}
 			case'E':
 			case'e':
-			{
-				//Exit
-				exit(1);				
-			}
-				
+				{
+					// Exit
+					exit(1);
+				}
+
 			default:
 				cout << "wrong Choice" << endl;
 			}
 		}
 	}
-
 };
 
-int main() {
-	FileManager* fManager = new FileManager();
-	UI* ui = new UI();
+int main()
+{
+	auto fManager = new FileManager();
+	auto ui = new UI();
 	string name, password;
-	if (!fManager->InPut()) {
+	if (!fManager->InPut())
+	{
 		cout << "Enter your name" << endl;
 		getline(cin, name);
 		cout << "Enter Privet Notes Password" << endl;
@@ -369,8 +564,9 @@ int main() {
 		fManager->setName(&name);
 		fManager->setPassword(&password);
 		fManager->OutPut();
-	}else
-	{		
+	}
+	else
+	{
 		ui->DisplayMenu(fManager);
 	}
 
